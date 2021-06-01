@@ -296,40 +296,6 @@ header ul li:hover a::before {
 }
 
 
-@media only screen and (max-width: 680px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
-        position: absolute;
-    }
-
-    header ul li {
-        display: none;
-    }
-
-    body {
-        height: 100%;
-        width: 100%;
-    }
-
-    /* 1240 */
-
-    .Experience {
-        padding: 0;
-        margin: 0;
-    }
-
-    .Experience .ExperImg {
-        max-width: 100%;
-        height: 117.8%;
-    }
-
-
-    /* AKHIRAN MAXIMAL LEBAR 680 */
-}
 
 /********** Bagian ABOUT  **********/
 .About {
@@ -741,11 +707,8 @@ header ul li:hover a::before {
     display: none;
 }
 
-@media screen and (min-width: 680px) {
-    .iconburger {
-        display: none;
-    }
-}
+/* MEDIA SCREEN AWALAN  */
+
 
 @media screen and (max-width: 1135px) {
     .sidebarIconToggle {
@@ -776,7 +739,22 @@ header ul li:hover a::before {
 
 }
 
+@media screen and (min-width: 1240px) {
+    .HeadContainer:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
 @media screen and (min-width: 1136px) and (max-width: 1240px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     .sidebarIconToggle {
         display: none;
     }
@@ -791,6 +769,7 @@ header ul li:hover a::before {
         text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
     }
 
+    /* ABOUT */
     .About {
         margin: 0;
         padding: 0;
@@ -809,7 +788,7 @@ header ul li:hover a::before {
     }
 
     .Abt-CovIcon a {
-        font-size: 20px;
+        font-size: 18px;
         width: 45px;
         height: 45px;
     }
@@ -824,7 +803,7 @@ header ul li:hover a::before {
     }
 
     .AbtProfilBody {
-        padding-top: 9%;
+        padding-top: 6%;
         margin-left: -2%;
     }
 
@@ -833,12 +812,10 @@ header ul li:hover a::before {
         height: 113%;
     }
 
-
     .AbtTentang-Cover:hover .AbtTentang-Konteks img.active {
         width: 370px;
         height: 485px;
     }
-
 
     .targetss {
         margin: 69% 4%;
@@ -858,10 +835,16 @@ header ul li:hover a::before {
     }
 }
 
-@media screen and (min-width: 1240px) {
-    .HeadContainer:after {
-        content: "";
-        display: table;
-        clear: both;
+@media screen and (min-width: 1136px) and (max-width: 1140px) {
+    #div1 {
+        font-size: 14px;
+    }
+
+    #div4 {
+        font-size: 14px;
+    }
+
+    .AbtContainer .target_box {
+        width: 510px;
     }
 }
