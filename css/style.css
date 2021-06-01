@@ -25,30 +25,6 @@
     --Huruf-font: "Raleway", Arial, sans-serif;
 }
 
-/************* Watermak *************/
-
-/* ========Watermak About======== */
-.About h1 {
-    position: absolute;
-    padding-top: 5%;
-    font-size: 12.5vh;
-    margin: 33vh 80%;
-    transform: rotate(270deg);
-    color: transparent;
-    text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
-}
-
-/*======== Watermak Experience ========  */
-.Experience h1 {
-    position: absolute;
-    padding-top: 40vh;
-    font-size: 11.5vh;
-    margin: 21vh 144vh;
-    transform: rotate(270deg);
-    color: transparent;
-    text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
-    z-index: 1;
-}
 
 /* ---------  Pembatas Bagian --------- */
 
@@ -59,6 +35,7 @@ html {
 
 body {
     min-height: 100%;
+    min-width: 100%;
 }
 
 header {
@@ -319,6 +296,41 @@ header ul li:hover a::before {
 }
 
 
+@media only screen and (max-width: 680px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* 1240 */
+
+    .Experience {
+        padding: 0;
+        margin: 0;
+    }
+
+    .Experience .ExperImg {
+        max-width: 100%;
+        height: 117.8%;
+    }
+
+
+    /* AKHIRAN MAXIMAL LEBAR 680 */
+}
+
 /********** Bagian ABOUT  **********/
 .About {
     margin: 0;
@@ -330,11 +342,7 @@ header ul li:hover a::before {
     color: white;
 }
 
-.HeadContainer:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 .Abt-Icon {
     float: left;
@@ -504,7 +512,6 @@ header ul li:hover a::before {
     position: relative;
     width: 440px;
     height: 400px;
-
 }
 
 .AbtContainer .thumb {
@@ -726,30 +733,135 @@ header ul li:hover a::before {
     height: 5px;
 }
 
+.sidebarIconToggle {
+    display: none;
+}
 
+.openSidebarMenu {
+    display: none;
+}
 
-@media only screen and (max-width: 700px) {
+@media screen and (min-width: 680px) {
+    .iconburger {
+        display: none;
+    }
+}
 
-    /* ========Watermak About======== */
-    .About h1 {
-        position: absolute;
-        padding-top: 5%;
-        font-size: 12.5vh;
-        margin: 3vh 80%;
-        transform: rotate(270deg);
-        color: transparent;
-        text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
+@media screen and (max-width: 1135px) {
+    .sidebarIconToggle {
+        display: block;
     }
 
-    /*======== Watermak Experience ========  */
-    .Experience h1 {
+    .openSidebarMenu {
+        display: block;
+    }
+
+    .tombolmenu {
+        display: block;
+        background: red;
+        width: 100px;
+        height: 500px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .tombolmenu li a {
+        padding: 55px;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 1136px) and (max-width: 1240px) {
+    .sidebarIconToggle {
+        display: none;
+    }
+
+    .openSidebarMenu {
+        display: none;
+    }
+
+    .banner .coverbanner {
+        margin: -6%;
+        margin-top: -25%;
+        text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
+    }
+
+    .About {
+        margin: 0;
+        padding: 0;
+        height: 580px !important;
+    }
+
+    .HeadContainer::after {
         position: absolute;
-        padding-top: 40vh;
-        font-size: 11.5vh;
-        margin: 21vh 144vh;
-        transform: rotate(270deg);
-        color: transparent;
-        text-shadow: 0 0 3px rgba(131, 131, 131, 0.09);
-        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Abt-CovIcon {
+        width: 60px;
+        padding-top: 9%;
+    }
+
+    .Abt-CovIcon a {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .Abt-CovIcon a::before {
+        width: 10px;
+        height: 35px;
+    }
+
+    .AbtTentang {
+        padding-top: 13%;
+    }
+
+    .AbtProfilBody {
+        padding-top: 9%;
+        margin-left: -2%;
+    }
+
+    .AbtContainer .target_box {
+        width: 570px;
+        height: 113%;
+    }
+
+
+    .AbtTentang-Cover:hover .AbtTentang-Konteks img.active {
+        width: 370px;
+        height: 485px;
+    }
+
+
+    .targetss {
+        margin: 69% 4%;
+    }
+
+    .thumb p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .AbtContainer .thumb li {
+        width: 90px;
+        height: 60px;
+        margin: 25px -25px;
+        padding: 6px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .HeadContainer:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }

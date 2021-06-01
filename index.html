@@ -1,325 +1,344 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Resume</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>    
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <!-- BODY -->
+
 <body>
-    <!-- *******  MENU  ******* -->
-    <header id="header">
-        <a href="#" class="logo">VJ</a>
-            <ul>
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#about">Tentang</a></li>
-              <li><a href="#exper">Pengalaman</a></li>
-            </ul>
-    </header>
-    <!-- *******  Head ******* -->  
+  <!-- *******  MENU  ******* -->
+  <header id="header">
 
-    <!-- *******  Banner ******* -->
-    <section class="banner" id="home">     
-        <img src="img/bg.jpg" id="bg">
-        <img src="img/mountain.png" id="gg" >
-        <img src="img/moon.png" id="mo" style="height: 750px; width: 100%;">
-        <img src="img/road.png" id="pi">
-        <h2 id="textbanner">
-            <div class="coverbanner">                
-                    <div class="teks-1">Hallo, perkenalkan nama saya...</div>
-                    <div class="teks-2">Victoria Jessica Magdalena Sitorus </div>
-                    <div class="teks-3">dan saya merupakan Administrasi</div>                
+    <a href="#" class="logo">VJ</a>
+
+    <!-- <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>         -->
+    <ul class='tombolmenu'>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#exper">Pengalaman</a></li>
+    </ul>
+  </header>
+  <!-- *******  Head ******* -->
+
+  <!-- *******  Banner ******* -->
+  <section class="banner" id="home">
+    <img src="img/bg.jpg" id="bg">
+    <img src="img/mountain.png" id="gg">
+    <img src="img/moon.png" id="mo" style="height: 750px; width: 100%;">
+    <img src="img/road.png" id="pi">
+    <h2 id="textbanner">
+      <div class="coverbanner">
+        <div class="teks-1">Hallo, perkenalkan nama saya...</div>
+        <div class="teks-2">Victoria Jessica Magdalena Sitorus </div>
+        <div class="teks-3">dan saya merupakan Administrasi</div>
+      </div>
+    </h2>
+  </section>
+  <!-- ******* Akhir Banner ******* -->
+
+  <!-- **** ABOUT SIMULASI **** -->
+  <section class="About" id="about">
+    <div class="HeadContainer">
+
+      <!-- ICON -->
+      <div class="Abt-Icon">
+        <div class="Abt-CovIcon">
+          <a href="https://www.facebook.com/victoria.jessica.798" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.linkedin.com/in/victoriajessicams" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Tentang -->
+      <div class="AbtTentang">
+        <div class="AbtTentang-Cover">
+          <div class="AbtTentang-Konteks">
+            <a href="#about"> <img src="img/FotoJesica.jpg" id="ImgKlik"> </a>
+            <div class="AbtTitle">Jessica Sitorus</div>
+            <div class="Abtplace">Administrasi</div>
+          </div>
+          <br>
+          <div class="AbtContent">
+            <p>Tentang Saya</p>
+            <span>Lulusan S1 Manajemen tahun 2019 dengan pengalaman kerja sebagai Admin gudang.<br /> Skill pengelolaan
+              dokumen yang teliti dan bertanggung jawab yang membuat pengelolaan keluar masuk data barang menjadi lebih
+              efektif.<br /><br />
+              Berminat berkarir sebagai staff admin.
+            </span>
+          </div>
+        </div>
+        <div class="panduan"> Tentang saya<br>
+          <p>Hover Me...</p>
+        </div>
+      </div>
+
+      <!-- Profil -->
+      <div class="AbtProfilBody">
+        <!-- body -->
+        <div class="AbtContainer">
+          <ul class="thumb">
+            <li class="iconifyf" target="1">
+              <a class="iconify" data-icon="fa-solid:user-tie"></a>
+              <p>Profile</p>
+            </li>
+
+            <li class="iconifyf" target="2">
+              <a class="iconify" data-icon="fluent:sport-soccer-24-filled"></a>
+              <p>Hobi</p>
+            </li>
+
+            <li class="iconifyf" target="3">
+              <a class="iconify" data-icon="fa-solid:user-cog"></a>
+              <p>Skill</p>
+            </li>
+
+            <li class="iconifyf" target="4">
+              <a class="iconify" data-icon="fa-solid:book-reader"></a>
+              <p>Pendidikan</p>
+            </li>
+          </ul>
+
+          <div class="target_box">
+            <!-- Data Profil -->
+            <div id="div1" class="targetDiv">
+              Nama&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Victoria Jessica Magdalena Sitorus<br>
+              Alamat&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp : Jln Graha Subang Kencana II Blok A No.1,<br>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ensp;&ensp;Subang, Jawa
+              Barat<br>
+              No.Seluler&ensp;&ensp;&ensp;&ensp; : (+62) 852 9079 1170<br>
+              Email&ensp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : victoriajessica31@gmail.com<br>
+              Tanggal Lahir&ensp;&ensp;: 31 Januari 1995 (24 Tahun)<br>
+              Jenis Kelamin&ensp;&ensp;: Wanita
             </div>
-        </h2>
-    </section>
-    <!-- ******* Akhir Banner ******* -->
+            <!-- hoby -->
+            <div id="div2" class="targetDiv">
+              <div class="columndiv2">
+                <h2 class="iconify" data-icon="emojione-monotone:guitar"></h2>
+                <p>Bermain Gitar</p>
+              </div>
+              <div class="columndiv2">
+                <h2 class="iconify" data-icon="emojione-monotone:basketball"></h2>
+                <p>Bermain Basket</p>
+              </div>
+              <div class="columndiv2">
+                <h2 class="iconify" data-icon="simple-icons:yourtravel-dot-tv"></h2>
 
-    <!-- **** ABOUT SIMULASI **** -->
-    <section class="About" id="about">              
-        <h1>TENTANG</h1>   
-        <div class="HeadContainer"> 
-
-            <!-- ICON -->
-            <div class="Abt-Icon">
-              <div class="Abt-CovIcon">
-                <a href="https://www.facebook.com/victoria.jessica.798" class="facebook"><i class="fa fa-facebook"></i></a> 
-                <a href="http://www.linkedin.com/in/victoriajessicams" class="linkedin"><i class="fa fa-linkedin"></i></a>        
+                <p>Traveling</p>
               </div>
             </div>
-
-            <!-- Tentang -->
-            <div class="AbtTentang">              
-              <div class="AbtTentang-Cover">                
-                <div class="AbtTentang-Konteks">   
-                  <a href="#about"> <img src="img/FotoJesica.jpg" id="ImgKlik"> </a>                
-                    <div class="AbtTitle">Jessica Sitorus</div>
-                    <div class="Abtplace">Administrasi</div>
+            <!-- Skill -->
+            <div id="div3" class="targetDiv">
+              <!-- SOFT Skill  -->
+              <div class="columndiv3">
+                <h2> SOFT SKILL </h2>
+                <ul class="CoverListSkill">
+                  <li target="1" class="SkillSs"> Teliti </li>
+                  <li target="2" class="SkillSs"> Team Work </li>
+                  <li target="3" class="SkillSs"> Komunikasi </li>
+                  <li target="4" class="SkillSs"> Manajemen Waktu </li>
+                  <li target="5" class="SkillSs"> Leadership </li>
+                  <li target="6" class="SkillSs"> Jujur </li>
+                  <li target="7" class="SkillSs"> Tanggung Jawab </li>
+                  <li target="8" class="SkillSs"> Bahasa Indonesia </li>
+                  <li target="9" class="SkillSs"> Bahasa Inggris </li>
+                </ul>
+              </div>
+              <!-- Ket Skill Soft Skill -->
+              <div id="ss1" class="targetss">
+                <p>Teliti</p>
+                <p>87%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 87%;"></div>
                 </div>
-                <br>
-                <div class="AbtContent"><p>Tentang Saya</p>
-                  <span>Lulusan S1 Manajemen tahun 2019 dengan pengalaman kerja sebagai Admin gudang.<br /> Skill pengelolaan dokumen yang teliti dan bertanggung jawab yang membuat pengelolaan keluar masuk data barang menjadi lebih efektif.<br /><br />
-                    Berminat berkarir sebagai staff admin. 
-                    </span>
-                </div>               
               </div>
-              <div class="panduan"> Tentang saya<br><p>Hover Me...</p>
-              </div>            
-          </div> 
-
-            <!-- Profil -->
-            <div class="AbtProfilBody"> <!-- body -->
-              <div class="AbtContainer"> 
-                  <ul class="thumb"> 
-                    <li class="iconifyf"  target="1">
-                      <a class="iconify" data-icon="fa-solid:user-tie"></a>
-                      <p>Profile</p>
-                    </li>
-
-                    <li class="iconifyf"  target="2">
-                      <a class="iconify" data-icon="fluent:sport-soccer-24-filled" ></a>
-                        <p>Hobi</p>
-                    </li>
-
-                    <li class="iconifyf"  target="3">
-                      <a class="iconify" data-icon="fa-solid:user-cog"></a>
-                      <p>Skill</p>
-                    </li>
-
-                    <li class="iconifyf"  target="4">
-                      <a class="iconify" data-icon="fa-solid:book-reader" ></a>
-                        <p>Pendidikan</p>
-                    </li>
+              <div id="ss2" class="targetss">
+                <p>Team Work</p>
+                <p>85%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div id="ss3" class="targetss">
+                <p>Komunikasi</p>
+                <p>93%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 93%;"></div>
+                </div>
+              </div>
+              <div id="ss4" class="targetss">
+                <p>Manajemen Waktu</p>
+                <p>89%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 89%;"></div>
+                </div>
+              </div>
+              <div id="ss5" class="targetss">
+                <p>Leadership </p>
+                <p>83%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 83%;"></div>
+                </div>
+              </div>
+              <div id="ss6" class="targetss">
+                <p>Jujur</p>
+                <p>95%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div id="ss7" class="targetss">
+                <p>Tanggung Jawab</p>
+                <p>90%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div id="ss8" class="targetss">
+                <p>Bahasa Indonesia </p>
+                <p>97%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 97%;"></div>
+                </div>
+              </div>
+              <div id="ss9" class="targetss">
+                <p>Bahasa Inggris</p>
+                <p>91%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 91%;"></div>
+                </div>
+              </div>
+              <!-- Hard Skill  -->
+              <div class="columndiv3">
+                <h2> HARD SKILL </h2>
+                <ul class="CoverListSkill">
+                  <li target="10" class="SkillSs"> Document Control </li>
+                  <li target="11" class="SkillSs"> SPSS </li>
+                  <li target="12" class="SkillSs"> Ms. Office</li>
+                </ul>
+              </div>
+              <!-- Ket Skill HARD Skill -->
+              <div id="ss10" class="targetss">
+                <p>Document Control</p>
+                <p>91%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 91%;"></div>
+                </div>
+              </div>
+              <div id="ss11" class="targetss">
+                <p>SPSS</p>
+                <p>75%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div id="ss12" class="targetss">
+                <p>Ms. Office</p>
+                <p>87%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 87%;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Pendidikan -->
+            <div id="div4" class="targetDiv">
+              <!--  FORMAL -->
+              <div class="formal">
+                <p>PENDIDIKAN FORMAL</p>
+                <ol class="c">
+                  <li style="font-weight: bold;">Universitas Widyatama - Kota Bandung (2017-2019)</li>
+                  <ul>
+                    <li>Jurusan S1 Manajemen (IPK 3.22-4.00)</li>
                   </ul>
-                
-                  <div class="target_box">   
-                      <!-- Data Profil -->                               
-                      <div id="div1" class="targetDiv">
-                        Nama&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Victoria Jessica Magdalena Sitorus<br>
-                        Alamat&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp : Jln Graha Subang Kencana II Blok A No.1,<br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ensp;&ensp;Subang, Jawa Barat<br>
-                        No.Seluler&ensp;&ensp;&ensp;&ensp; : (+62) 852 9079 1170<br>
-                        Email&ensp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : victoriajessica31@gmail.com<br>
-                        Tanggal Lahir&ensp;&ensp;: 31 Januari 1995 (24 Tahun)<br>
-                        Jenis Kelamin&ensp;&ensp;: Wanita
-                      </div>
-                      <!-- hoby -->
-                      <div id="div2" class="targetDiv">
-                        <div class="columndiv2">
-                          <h2 class="iconify" data-icon="emojione-monotone:guitar" ></h2>
-                          <p>Bermain Gitar</p>
-                        </div>
-                        <div class="columndiv2">
-                          <h2 class="iconify" data-icon="emojione-monotone:basketball" ></h2>
-                          <p>Bermain Basket</p>
-                        </div>
-                        <div class="columndiv2">
-                          <h2 class="iconify" data-icon="simple-icons:yourtravel-dot-tv" ></h2>
-                          
-                          <p>Traveling</p>
-                        </div>                        
-                      </div>
-                      <!-- Skill -->
-                      <div id="div3" class="targetDiv">
-                        <!-- SOFT Skill  -->
-                        <div class="columndiv3">
-                          <h2> SOFT SKILL </h2>
-                              <ul class="CoverListSkill">
-                                <li target="1" class="SkillSs"> Teliti </li>              
-                                <li target="2" class="SkillSs"> Team Work </li>
-                                <li target="3" class="SkillSs"> Komunikasi </li>
-                                <li target="4" class="SkillSs"> Manajemen Waktu </li>
-                                <li target="5" class="SkillSs"> Leadership </li>
-                                <li target="6" class="SkillSs"> Jujur </li>
-                                <li target="7" class="SkillSs"> Tanggung Jawab </li>
-                                <li target="8" class="SkillSs"> Bahasa Indonesia </li>
-                                <li target="9" class="SkillSs"> Bahasa Inggris </li>
-                              </ul>
-                        </div>
-                          <!-- Ket Skill Soft Skill -->
-                          <div id="ss1" class="targetss">
-                            <p>Teliti</p>
-                            <p>87%</p>
-                            <div class="skillss"><div class="skill_levelss" style="width: 87%;"></div></div>                        
-                          </div>
-                          <div id="ss2" class="targetss">
-                            <p>Team Work</p>
-                            <p>85%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 85%;"></div>
-                            </div>                        
-                          </div>
-                          <div id="ss3" class="targetss">
-                            <p>Komunikasi</p>
-                            <p>93%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 93%;"></div>
-                            </div>                        
-                          </div>
-                          <div id="ss4" class="targetss">
-                            <p>Manajemen Waktu</p>
-                            <p>89%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 89%;"></div>
-                            </div>                        
-                          </div>
-                          <div id="ss5" class="targetss">
-                            <p>Leadership </p>
-                            <p>83%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 83%;"></div>
-                            </div>                        
-                          </div>
-                          <div id="ss6" class="targetss">
-                            <p>Jujur</p>
-                            <p>95%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 95%;"></div>
-                            </div>                        
-                          </div>
-                          <div id="ss7" class="targetss">
-                            <p>Tanggung Jawab</p>
-                            <p>90%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 90%;"></div>
-                            </div>                        
-                          </div>
-                          <div id="ss8" class="targetss">
-                            <p>Bahasa Indonesia </p>
-                            <p>97%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 97%;"></div>
-                            </div>                        
-                          </div>
-                          <div id="ss9" class="targetss">
-                          <p>Bahasa Inggris</p>
-                          <p>91%</p>
-                          <div class="skillss">
-                            <div class="skill_levelss" style="width: 91%;"></div>
-                          </div>                        
-                        </div>
-                        <!-- Hard Skill  -->
-                        <div class="columndiv3">
-                          <h2> HARD SKILL </h2>
-                          <ul class="CoverListSkill">
-                            <li target="10" class="SkillSs"> Document Control  </li>
-                            <li target="11" class="SkillSs"> SPSS </li>                                                      
-                            <li target="12" class="SkillSs"> Ms. Office</li>                            
-                          </ul>
-                        </div>
-                          <!-- Ket Skill HARD Skill -->
-                          <div id="ss10" class="targetss">
-                            <p>Document Control</p>
-                            <p>91%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 91%;"></div>
-                            </div>
-                          </div>
-                          <div id="ss11" class="targetss">
-                            <p>SPSS</p>
-                            <p>75%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 75%;"></div>
-                            </div>
-                          </div>
-                          <div id="ss12" class="targetss">
-                            <p>Ms. Office</p>
-                            <p>87%</p>
-                            <div class="skillss">
-                              <div class="skill_levelss" style="width: 87%;"></div>
-                            </div>
-                          </div>
-                      </div>
-                      <!-- Pendidikan -->
-                      <div id="div4" class="targetDiv">
-                        <!--  FORMAL -->
-                          <div class="formal">
-                            <p>PENDIDIKAN FORMAL</p>
-                            <ol class="c" >
-                              <li style="font-weight: bold;">Universitas Widyatama - Kota Bandung (2017-2019)</li>
-                              <ul>
-                                <li>Jurusan S1 Manajemen (IPK 3.22-4.00)</li>
-                              </ul>
-                            </ol>
-                            <ol class="c" >
-                              <li style="font-weight: bold;">Universitas Katolik Parahyangan - Kota Bandung (2013-2017)</li>                         
-                              <ul>                                                    
-                                <li>Jurusan D3 Manajemen (IPK 3.13-4.00)</li>
-                              </ul> 
-                            </ol>
-                        </div>
-                        <!--  NON FORMAL -->
-                        <div class="non-formal">
-                          <p>PENDIDIKAN NON - FORMAL</p>
-                          <!-- Bag 1 -->
-                          <ol class="c" >
-                            <li>Cambridge English - Kota Bandung (2017)</li>
-                            <li>English Language Test at ITB Language Centre - Kota Bandung (2017)</li>
-                            <li>English Proficiency Test at Widyatama University - Kota Bandung (2018)</li>                            
-                          </ol>
-                        </div>
-                      </div>
-                  </div>    
-              </div> 
-            </div>         
-    </section>
-    <!-- ******* Akhir ABOUT  ******* -->
+                </ol>
+                <ol class="c">
+                  <li style="font-weight: bold;">Universitas Katolik Parahyangan - Kota Bandung (2013-2017)</li>
+                  <ul>
+                    <li>Jurusan D3 Manajemen (IPK 3.13-4.00)</li>
+                  </ul>
+                </ol>
+              </div>
+              <!--  NON FORMAL -->
+              <div class="non-formal">
+                <p>PENDIDIKAN NON - FORMAL</p>
+                <!-- Bag 1 -->
+                <ol class="c">
+                  <li>Cambridge English - Kota Bandung (2017)</li>
+                  <li>English Language Test at ITB Language Centre - Kota Bandung (2017)</li>
+                  <li>English Proficiency Test at Widyatama University - Kota Bandung (2018)</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- ******* Akhir ABOUT  ******* -->
 
-    <!-- ******* Experience ******* -->
-    <section class="Experience" id="exper">      
-    <h1>PENGALAMAN</h1>    
-    
-    <div class="CoverExper">        
-      <div class="ExperImg"></div>  
+  <!-- ******* Experience ******* -->
+  <section class="Experience" id="exper">
+
+    <div class="CoverExper">
+      <div class="ExperImg"></div>
       <ul>
         <li>
-          <div class="KontenExper">        
+          <div class="KontenExper">
             <h3>PT TAEKWANG INDUSTRIAL – Subang, JawaBarat</h3>
             <h3>Administrasi Gudang</h3>
             <p>
-              PT. Taekwang Indonesia adalah  salah satu perusahaan besar yang ada di Kabupaten Subang <br />
+              PT. Taekwang Indonesia adalah salah satu perusahaan besar yang ada di Kabupaten Subang <br />
               yang telah banyak menyerap tenaga kerja di Kabupaten Subang. <br />
               PT. Taekwang Indonesia saat ini merupakan pabrik supplier sepatu Nike terbesar.
               <p></p>
               <div id="rata">
                 <span style="font-weight: bold; font-size: 16px;">Aktivitas Pekerjaan</span><br />
-                1.	Melakukan pengecekkan stock material pada Gudang,<br />
-                2.	Melakukan administrasi In Out Mold,<br />
-                3.	Melakukan pengaripan dokumen bea cukai,<br />
-                4.	Melakukan pengecekkan mesin sesuai SOP serta mencatat laporan hasil pengecekkan,<br />
-                5.	Memproses dan mempersiapkan barang, sesuai dengan surat jalan,<br />
-                6.	Memonitoring alur pendistribusian barang yang akan dikirim.                
+                1. Melakukan pengecekkan stock material pada Gudang,<br />
+                2. Melakukan administrasi In Out Mold,<br />
+                3. Melakukan pengaripan dokumen bea cukai,<br />
+                4. Melakukan pengecekkan mesin sesuai SOP serta mencatat laporan hasil pengecekkan,<br />
+                5. Memproses dan mempersiapkan barang, sesuai dengan surat jalan,<br />
+                6. Memonitoring alur pendistribusian barang yang akan dikirim.
               </div>
-            </p>            
+            </p>
           </div>
           <div class="WaktuExper">
             <h4>Desember 2019 - September 2020</h4>
           </div>
         </li>
-        
+
         <div style="clear: both"></div>
       </ul>
     </div>
-    </section>
-    <!-- ******* Akhiran EXPERIENCE ******* -->
-    <!-- ******* javascript ********* -->
-    <script src="js/main.js"></script>
+  </section>
+  <!-- ******* Akhiran EXPERIENCE ******* -->
+  <!-- ******* javascript ********* -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>
 
 
-<!-- LOKASI C:\Users\Sitompul\Desktop\Cv_Abed -->
-<!--Link url : abedsitompul.github.io -->
+<!-- github.
+user : victoriajessica
+email : victoriajessica31@gmail.com
+password ; Vj23380080
+https://victoriajessica.github.io/vjessica.github.io/
+
+1080 x 2400  -->
