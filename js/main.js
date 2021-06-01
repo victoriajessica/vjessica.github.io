@@ -18,7 +18,7 @@ $(document).ready(function () {
     bg.style.top = value * 0.5 +'px';
     moon.style.left = -value * 0.15 +'px';
     gunung.style.top = -value * 0.15 + 'px';
-    pantai.style.top = value * 0.01 +'px';
+    pantai.style.top = value * 0.40 +'px';
     txt.style.top = value * 1 +'px';  
   })
 

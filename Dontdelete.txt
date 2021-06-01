@@ -1,0 +1,905 @@
+
+/**********  Bag. Experience  **********/
+.Experience {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+.Experience .ExperImg {
+    position: absolute;
+    background: url(../img/xan.jpg);
+    background-size: cover;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 117.8%;
+}
+
+.Experience .ExperImg::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#0a2a43,
+            rgba(12, 44, 68, 0.4),
+            #0a2a43);
+}
+
+.CoverExper {
+    position: relative;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.CoverExper ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.CoverExper ul li {
+    line-height: normal;
+    position: relative;
+    width: 56%;
+    margin-top: 5%;
+    margin-left: 13%;
+    /* margin: 5% 0 10% 10%; */
+    box-sizing: border-box;
+    text-align: right;
+    clear: both;
+}
+
+.KontenExper {
+    letter-spacing: 1px;
+    line-height: 22px;
+    background: rgba(112, 112, 112, 0.1);
+    padding: 10px;
+    font-size: var(--Ukuran2-size);
+}
+
+.CoverExper ul li {
+    padding-top: 1%;
+}
+
+.CoverExper ul li::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -25px;
+    width: 10px;
+    height: 10px;
+    background: rgb(165, 165, 165);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px white;
+    margin-top: 2%;
+}
+
+.CoverExper ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.CoverExper ul li p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.CoverExper ul li .WaktuExper {
+    position: absolute;
+    top: 5px;
+    right: -290px;
+    margin: 0;
+    padding: 8px 15px;
+    background-color: rgb(207, 206, 206, 0.5);
+    border-radius: 15px;
+    margin-top: 2%;
+    font-size: var(--Ukuran2-size);
+}
+
+
+
+/********** Bagian ABOUT  **********/
+.About {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 4%;
+    background: rgb(12, 44, 69);
+    color: white;
+}
+
+
+
+.Abt-Icon {
+    float: left;
+    width: 6%;
+    padding-top: 18%;
+}
+
+.Abt-CovIcon {
+    position: absolute;
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    z-index: 2;
+    overflow: hidden;
+    width: 79px;
+}
+
+.Abt-CovIcon a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin: 10%;
+    color: white;
+    font-size: 30px;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+.Abt-CovIcon a:hover {
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.Abt-CovIcon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+
+.Abt-CovIcon a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
+.facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+/*--- Kolom AbtTentang **********/
+.AbtTentang {
+    float: left;
+    width: 38%;
+    height: 300px;
+    padding-top: 8%;
+    transition: all 0.3s ease-out;
+}
+
+.AbtTentang-Cover {
+    width: 215px;
+    height: 213px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.AbtTentang-Cover:hover {
+    width: 370px;
+    height: 490px;
+    border-radius: 5px;
+    /* background-color: rgba(255, 255, 255, 0.658); */
+    background-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    margin-top: calc(-15% + 10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.AbtTentang-Konteks img {
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    height: 190px;
+    width: 190px;
+    border: 1px solid #fff;
+    object-fit: cover;
+    margin: 12px auto;
+    transition: all 0.3s ease;
+}
+
+.AbtTentang-Konteks .AbtTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.AbtTentang-Konteks .Abtplace {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.AbtTentang-Cover:hover .AbtTentang-Konteks img.active {
+    width: 370px;
+    height: 490px;
+    margin: 0px auto;
+    border-radius: 0px;
+}
+
+.AbtContent p {
+    font-weight: bold;
+    font-size: var(--Ukuran3-size);
+}
+
+.AbtContent span {
+    font-size: 15px;
+}
+
+.panduan {
+    font-weight: bold;
+    padding-left: 38%;
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.panduan p {
+    padding-top: 1.5%;
+    font-size: 54%;
+    padding-left: 21%;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.AbtTentang-Cover:hover+.panduan {
+    display: none;
+}
+
+.AbtTentang-Konteks img.active+.panduan {
+    display: none;
+}
+
+/*--- Kolom AbtProfl **********/
+.AbtProfilBody {
+    float: left;
+    width: 55.99%;
+    height: 300px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3%;
+}
+
+.AbtContainer {
+    position: relative;
+    width: 440px;
+    height: 400px;
+}
+
+.AbtContainer .thumb {
+    position: absolute;
+    top: 57%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+/* COVER MENU */
+.AbtContainer .thumb li {
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    padding: var(--Ukuran2-size);
+    width: 100px;
+    height: 70px;
+    margin: 25px -30px;
+    border-radius: 15%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+/* ICON nya */
+.thumb .iconify {
+    font-size: 30px;
+}
+
+.thumb li::after {
+    filter: blur(5px);
+}
+
+.thumb li:hover::before,
+.thumb li:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    transform: scale(1.02);
+    background: linear-gradient(45deg, #0f43f09d, #00f0f0, #0f43f09d,
+            #00f0f0, #0f43f09d);
+    border-radius: 15%;
+    background-size: 400%;
+    transition: 1s;
+    z-index: -1;
+    animation: animasiAbout 20s linear infinite;
+    color: blue;
+}
+
+.thumb li:hover {
+    color: #00f0f0;
+}
+
+.terpilih {
+    color: #00f0f0;
+}
+
+
+@keyframes animasiAbout {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* TEKS MENU */
+.thumb p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* COVER PARAGRAF*/
+.AbtContainer .target_box {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 0;
+    width: 600px;
+    height: 113%;
+    /* background-color: rgba(255, 255, 255, 0.09); */
+    font-size: 16px;
+    border: 1px solid rgba(230, 230, 230, 0.25);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 130px;
+    line-height: 1.5em;
+}
+
+/** div1 **/
+#div1 {
+    word-spacing: 3px;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+/** div2  **/
+#div2 {
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#div2 .columndiv2 .iconify {
+    font-size: 50px;
+}
+
+.columndiv2 {
+    float: left;
+    width: 33%;
+}
+
+#div2:after,
+#div3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/** div3  **/
+#div3 {
+    margin-top: -25%;
+}
+
+.columndiv3 {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.columndiv3 h2 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.CoverListSkill {
+    margin: 0;
+    padding: 0;
+}
+
+.CoverListSkill li {
+    padding: 2px 0;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.9);
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 4%;
+}
+
+/** div4  **/
+#div4 {
+    line-height: 1.5em;
+    margin-top: -50px;
+}
+
+#div4 ul {
+    padding-left: 1%;
+    list-style: none;
+}
+
+#div4 .c {
+    margin-top: 1px;
+    list-style-type: square;
+}
+
+#div4 .formal p,
+#div4 .non-formal p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#div4 .non-formal {
+    margin-top: 50px;
+}
+
+/*  Dll About    */
+.target_box .targetDiv {
+    display: none;
+}
+
+.thumb li.active {
+    background: rgb(0, 0, 0);
+    color: yellow;
+}
+
+
+.targetss {
+    position: absolute;
+    margin: 66% 4%;
+    font-size: 15px;
+    width: 80%;
+    display: none;
+    font-weight: bold;
+}
+
+.targetss p:nth-last-child(2) {
+    float: right;
+    margin-top: -25px;
+}
+
+.skill_levelss {
+    margin-top: 1%;
+    background: #BFDFF8;
+    width: 100%;
+    height: 5px;
+}
+
+.sidebarIconToggle {
+    display: none;
+}
+
+.openSidebarMenu {
+    display: none;
+}
+
+/* MEDIA SCREEN AWALAN  */
+
+@media screen and (min-width: 1136px) and (max-width: 1240px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebarIconToggle {
+        display: none;
+    }
+
+    .openSidebarMenu {
+        display: none;
+    }
+
+    .banner .coverbanner {
+        margin: -6%;
+        margin-top: -25%;
+        text-shadow: 0 2px 2px rgba(92, 92, 92, 0.5);
+    }
+
+    /* ABOUT */
+    .About {
+        margin: 0;
+        padding: 0;
+        height: 580px !important;
+    }
+
+    .HeadContainer::after {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Abt-CovIcon {
+        width: 60px;
+        padding-top: 9%;
+    }
+
+    .Abt-CovIcon a {
+        font-size: 18px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .Abt-CovIcon a::before {
+        width: 10px;
+        height: 35px;
+    }
+
+    .AbtTentang {
+        padding-top: 13%;
+    }
+
+    .AbtProfilBody {
+        padding-top: 6%;
+        margin-left: -2%;
+    }
+
+    .AbtContainer .target_box {
+        width: 570px;
+        height: 113%;
+    }
+
+    .AbtTentang-Cover:hover .AbtTentang-Konteks img.active {
+        width: 370px;
+        height: 485px;
+    }
+
+    .targetss {
+        margin: 69% 4%;
+    }
+
+    .thumb p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .AbtContainer .thumb li {
+        width: 90px;
+        height: 60px;
+        margin: 25px -25px;
+        padding: 6px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (min-width: 1136px) and (max-width: 1140px) {
+    #div1 {
+        font-size: 14px;
+    }
+
+    #div4 {
+        font-size: 14px;
+    }
+
+    .AbtContainer .target_box {
+        width: 510px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .HeadContainer:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+  <!-- ********************************  HTML nya ************************************************ -->
+  <!-- **** ABOUT SIMULASI  **** -->
+  <section class="About" id="about">
+    <div class="HeadContainer">
+
+      <!-- ICON -->
+      <div class="Abt-Icon">
+        <div class="Abt-CovIcon">
+          <a href="https://www.facebook.com/victoria.jessica.798" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.linkedin.com/in/victoriajessicams" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="AbtTentang">
+        <div class="AbtTentang-Cover">
+          <div class="AbtTentang-Konteks">
+            <a href="#about"> <img src="img/FotoJesica.jpg" id="ImgKlik"> </a>
+            <div class="AbtTitle">Jessica Sitorus</div>
+            <div class="Abtplace">Administrasi</div>
+          </div>
+          <br>
+          <div class="AbtContent">
+            <p>Tentang Saya</p>
+            <span>Lulusan S1 Manajemen tahun 2019 dengan pengalaman kerja sebagai Admin gudang.<br /> Skill pengelolaan
+              dokumen yang teliti dan bertanggung jawab yang membuat pengelolaan keluar masuk data barang menjadi lebih
+              efektif.<br /><br />
+              Berminat berkarir sebagai staff admin.
+            </span>
+          </div>
+        </div>
+        <div class="panduan"> Tentang saya<br>
+          <p>Hover Me...</p>
+        </div>
+      </div>
+
+      <!-- Profil -->
+      <div class="AbtProfilBody">
+        <!-- body -->
+        <div class="AbtContainer">
+          <ul class="thumb">
+            <li class="iconifyf" target="1">
+              <a class="iconify" data-icon="fa-solid:user-tie"></a>
+              <p>Profile</p>
+            </li>
+
+            <li class="iconifyf" target="2">
+              <a class="iconify" data-icon="fluent:sport-soccer-24-filled"></a>
+              <p>Hobi</p>
+            </li>
+
+            <li class="iconifyf" target="3">
+              <a class="iconify" data-icon="fa-solid:user-cog"></a>
+              <p>Skill</p>
+            </li>
+
+            <li class="iconifyf" target="4">
+              <a class="iconify" data-icon="fa-solid:book-reader"></a>
+              <p>Pendidikan</p>
+            </li>
+          </ul>
+
+          <div class="target_box">
+            <!-- Data Profil -->
+            <div id="div1" class="targetDiv">
+              Nama&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : Victoria Jessica Magdalena Sitorus<br>
+              Alamat&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp : Jln Graha Subang Kencana II Blok A No.1,<br>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ensp;&ensp;Subang, Jawa
+              Barat<br>
+              No.Seluler&ensp;&ensp;&ensp;&ensp; : (+62) 852 9079 1170<br>
+              Email&ensp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : victoriajessica31@gmail.com<br>
+              Tanggal Lahir&ensp;&ensp;: 31 Januari 1995 (24 Tahun)<br>
+              Jenis Kelamin&ensp;&ensp;: Wanita
+            </div>
+            <!-- hoby -->
+            <div id="div2" class="targetDiv">
+              <div class="columndiv2">
+                <h2 class="iconify" data-icon="emojione-monotone:guitar"></h2>
+                <p>Bermain Gitar</p>
+              </div>
+              <div class="columndiv2">
+                <h2 class="iconify" data-icon="emojione-monotone:basketball"></h2>
+                <p>Bermain Basket</p>
+              </div>
+              <div class="columndiv2">
+                <h2 class="iconify" data-icon="simple-icons:yourtravel-dot-tv"></h2>
+
+                <p>Traveling</p>
+              </div>
+            </div>
+            <!-- Skill -->
+            <div id="div3" class="targetDiv">
+              <!-- SOFT Skill  -->
+              <div class="columndiv3">
+                <h2> SOFT SKILL </h2>
+                <ul class="CoverListSkill">
+                  <li target="1" class="SkillSs"> Teliti </li>
+                  <li target="2" class="SkillSs"> Team Work </li>
+                  <li target="3" class="SkillSs"> Komunikasi </li>
+                  <li target="4" class="SkillSs"> Manajemen Waktu </li>
+                  <li target="5" class="SkillSs"> Leadership </li>
+                  <li target="6" class="SkillSs"> Jujur </li>
+                  <li target="7" class="SkillSs"> Tanggung Jawab </li>
+                  <li target="8" class="SkillSs"> Bahasa Indonesia </li>
+                  <li target="9" class="SkillSs"> Bahasa Inggris </li>
+                </ul>
+              </div>
+              <!-- Ket Skill Soft Skill -->
+              <div id="ss1" class="targetss">
+                <p>Teliti</p>
+                <p>87%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 87%;"></div>
+                </div>
+              </div>
+              <div id="ss2" class="targetss">
+                <p>Team Work</p>
+                <p>85%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div id="ss3" class="targetss">
+                <p>Komunikasi</p>
+                <p>93%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 93%;"></div>
+                </div>
+              </div>
+              <div id="ss4" class="targetss">
+                <p>Manajemen Waktu</p>
+                <p>89%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 89%;"></div>
+                </div>
+              </div>
+              <div id="ss5" class="targetss">
+                <p>Leadership </p>
+                <p>83%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 83%;"></div>
+                </div>
+              </div>
+              <div id="ss6" class="targetss">
+                <p>Jujur</p>
+                <p>95%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div id="ss7" class="targetss">
+                <p>Tanggung Jawab</p>
+                <p>90%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div id="ss8" class="targetss">
+                <p>Bahasa Indonesia </p>
+                <p>97%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 97%;"></div>
+                </div>
+              </div>
+              <div id="ss9" class="targetss">
+                <p>Bahasa Inggris</p>
+                <p>91%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 91%;"></div>
+                </div>
+              </div>
+              <!-- Hard Skill  -->
+              <div class="columndiv3">
+                <h2> HARD SKILL </h2>
+                <ul class="CoverListSkill">
+                  <li target="10" class="SkillSs"> Document Control </li>
+                  <li target="11" class="SkillSs"> SPSS </li>
+                  <li target="12" class="SkillSs"> Ms. Office</li>
+                </ul>
+              </div>
+              <!-- Ket Skill HARD Skill -->
+              <div id="ss10" class="targetss">
+                <p>Document Control</p>
+                <p>91%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 91%;"></div>
+                </div>
+              </div>
+              <div id="ss11" class="targetss">
+                <p>SPSS</p>
+                <p>75%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div id="ss12" class="targetss">
+                <p>Ms. Office</p>
+                <p>87%</p>
+                <div class="skillss">
+                  <div class="skill_levelss" style="width: 87%;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Pendidikan -->
+            <div id="div4" class="targetDiv">
+              <!--  FORMAL -->
+              <div class="formal">
+                <p>PENDIDIKAN FORMAL</p>
+                <ol class="c">
+                  <li style="font-weight: bold;">Universitas Widyatama - Kota Bandung (2017-2019)</li>
+                  <ul>
+                    <li>Jurusan S1 Manajemen (IPK 3.22-4.00)</li>
+                  </ul>
+                </ol>
+                <ol class="c">
+                  <li style="font-weight: bold;">Universitas Katolik Parahyangan - Kota Bandung (2013-2017)</li>
+                  <ul>
+                    <li>Jurusan D3 Manajemen (IPK 3.13-4.00)</li>
+                  </ul>
+                </ol>
+              </div>
+              <!--  NON FORMAL -->
+              <div class="non-formal">
+                <p>PENDIDIKAN NON - FORMAL</p>
+                <!-- Bag 1 -->
+                <ol class="c">
+                  <li>Cambridge English - Kota Bandung (2017)</li>
+                  <li>English Language Test at ITB Language Centre - Kota Bandung (2017)</li>
+                  <li>English Proficiency Test at Widyatama University - Kota Bandung (2018)</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- ******* Akhir ABOUT  ******* -->
+
+  <!-- ******* Experience ******* -->
+  <section class="Experience" id="exper">
+
+    <div class="CoverExper">
+      <div class="ExperImg"></div>
+      <ul>
+        <li>
+          <div class="KontenExper">
+            <h3>PT TAEKWANG INDUSTRIAL – Subang, JawaBarat</h3>
+            <h3>Administrasi Gudang</h3>
+            <p>
+              PT. Taekwang Indonesia adalah salah satu perusahaan besar yang ada di Kabupaten Subang <br />
+              yang telah banyak menyerap tenaga kerja di Kabupaten Subang. <br />
+              PT. Taekwang Indonesia saat ini merupakan pabrik supplier sepatu Nike terbesar.
+              <p></p>
+              <div id="rata">
+                <span style="font-weight: bold; font-size: 16px;">Aktivitas Pekerjaan</span><br />
+                1. Melakukan pengecekkan stock material pada Gudang,<br />
+                2. Melakukan administrasi In Out Mold,<br />
+                3. Melakukan pengaripan dokumen bea cukai,<br />
+                4. Melakukan pengecekkan mesin sesuai SOP serta mencatat laporan hasil pengecekkan,<br />
+                5. Memproses dan mempersiapkan barang, sesuai dengan surat jalan,<br />
+                6. Memonitoring alur pendistribusian barang yang akan dikirim.
+              </div>
+            </p>
+          </div>
+          <div class="WaktuExper">
+            <h4>Desember 2019 - September 2020</h4>
+          </div>
+        </li>
+
+        <div style="clear: both"></div>
+      </ul>
+    </div>
+  </section>
+  <!-- ******* Akhiran EXPERIENCE ******* -->
+  <!-- ******* javascript ********* -->
+  <script src="js/main.js"></script>
+</body>
+
+
+
