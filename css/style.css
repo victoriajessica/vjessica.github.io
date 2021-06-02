@@ -191,113 +191,6 @@ header ul li:hover a::before {
     display: none;
 }
 
-/* hitam */
-@media screen and (max-width:800px) {
-
-    /* side tombol */
-    .sidbtn {
-        position: absolute;
-        right: 190px;
-        top: 20px;
-        width: 35px;
-        height: 35px;
-        box-sizing: border-box;
-        background: rgb(0, 0, 0);
-        cursor: pointer;
-        border: none;
-        outline: none;
-        display: block;
-    }
-
-    header {
-        padding: 10px 35px;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* text banner */
-    #textbanner {
-        padding: 0;
-        position: absolute;
-        width: 690px;
-    }
-
-    #textbanner div {
-        padding: 0 200px;
-        margin-bottom: 5px;
-        margin-left: -280px;
-        font-size: 30px;
-        line-height: 40px;
-        overflow: hidden;
-    }
-
-    #paper {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 185px;
-        transition: .3s;
-    }
-
-    #paper ul {
-        float: right;
-        padding: 30px 24px;
-        height: 100%;
-        display: block;
-        text-decoration: none;
-        background-color: rgba(19, 51, 76, 0.5);
-    }
-
-    #paper ul li {
-        margin-bottom: 30px;
-
-    }
-
-    #paper ul li a {
-        margin-bottom: 333px;
-        color: white;
-        font-size: 18px;
-    }
-
-    .sidbtn span {
-        display: block;
-        width: 28px;
-        height: 3px;
-        background: black;
-        position: absolute;
-        top: 6px;
-        left: 3px;
-        transition: 0.3s;
-    }
-
-    .sidbtn span:before {
-        content: '';
-        position: absolute;
-        width: 28px;
-        height: 3px;
-        background: black;
-        top: 10px;
-        left: 0;
-        transition: 0.3s;
-    }
-
-    .sidbtn span:after {
-        content: '';
-        position: absolute;
-        width: 28px;
-        height: 3px;
-        background: black;
-        top: 20px;
-        left: 0;
-        transition: 0.3s;
-    }
-
-}
-
 /* pink */
 @media screen and (max-width:700px) {
 
@@ -309,7 +202,7 @@ header ul li:hover a::before {
         width: 35px;
         height: 35px;
         box-sizing: border-box;
-        background: rgb(255, 0, 132);
+        background: rgb(0, 0, 0);
         cursor: pointer;
         border: none;
         outline: none;
