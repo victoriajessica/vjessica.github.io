@@ -1,10 +1,9 @@
-/* About Image */
-const Abtgmbr = document.getElementById("ImgKlik");
-Abtgmbr.onclick = function () {
-  this.classList.toggle("active");
-};
+
 
 $(document).ready(function () {
+  $('.sidbtn').click (function(){
+    $(".MenuHeader").toggleClass(".atipe");
+  })
 
   let bg = document.getElementById("bg");
   let moon = document.getElementById("mo");
@@ -21,6 +20,7 @@ $(document).ready(function () {
     pantai.style.top = value * 0.40 +'px';
     txt.style.top = value * 1 +'px';  
   })
+
 
 
   // Ubah Color Menu About
@@ -49,6 +49,10 @@ $(document).ready(function () {
 });
 
 
+
+
+
+
 /* Package Sticky */
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
@@ -58,3 +62,9 @@ $("figure").mouseleave(function () {
   $(this).removeClass("hover");
 });
 /* Akhiran Sticky  swiper-button-prev*/
+
+/* About Image */
+const Abtgmbr = document.getElementById("ImgKlik");
+Abtgmbr.onclick = function () {
+  this.classList.toggle("active");
+};
