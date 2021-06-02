@@ -191,7 +191,7 @@ header ul li:hover a::before {
     display: none;
 }
 
-@media screen and (max-width: 1135px) {
+@media screen and (max-width: 1000px) {
 
     header {
         padding: 10px 35px;
