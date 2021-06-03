@@ -1,3 +1,13 @@
+// var bbb = window.pageYOffset;
+// window.onscroll = function{  
+//   var ccc = window.pageYOffset;
+//   if(bbb > ccc){
+//     document.getElementsByClassName(".visitor").style.top="200%";
+//   }else{
+//     document.getElementsByClassName(".visitor").style.top="-1110px";
+//   }
+//   ccc = bbb;
+// }
 
 
 $(document).ready(function () {

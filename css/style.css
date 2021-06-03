@@ -47,7 +47,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 6px 100px;
-    z-index: 103;
+    z-index: 11;
     transition: 0.6s;
 }
 
@@ -112,7 +112,7 @@ header ul li:hover a::before {
     margin: 0;
     padding: 0;
     background: #0a2a43;
-    min-height: 100%;
+    height: 100vh;
 }
 
 #home {
@@ -132,7 +132,7 @@ header ul li:hover a::before {
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #0a2a43, transparent);
-    z-index: 101;
+    z-index: 10;
 }
 
 #home::after {
@@ -143,7 +143,7 @@ header ul li:hover a::before {
     width: 100%;
     height: 100%;
     background: #0a2a43;
-    z-index: 101;
+    z-index: 10;
     mix-blend-mode: color;
 }
 
@@ -191,12 +191,564 @@ header ul li:hover a::before {
     display: none;
 }
 
-/* ************************************************************************* */
 
-/* hijau lumut */
-@media screen and (max-width:420px) {
+/**********  Bag. Experience  **********/
+.Experience {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+.Experience .ExperImg {
+    position: absolute;
+    background: url(../img/xan.jpg);
+    background-size: cover;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 117.8%;
+}
+
+.Experience .ExperImg::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#0a2a43,
+            rgba(12, 44, 68, 0.4),
+            #0a2a43);
+}
+
+.CoverExper {
+    position: relative;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.CoverExper ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.CoverExper ul li {
+    line-height: normal;
+    position: relative;
+    width: 56%;
+    margin-top: 5%;
+    margin-left: 13%;
+    /* margin: 5% 0 10% 10%; */
+    box-sizing: border-box;
+    text-align: right;
+    clear: both;
+}
+
+.KontenExper {
+    letter-spacing: 1px;
+    line-height: 22px;
+    background: rgba(112, 112, 112, 0.1);
+    padding: 10px;
+    font-size: var(--Ukuran2-size);
+}
+
+.CoverExper ul li {
+    padding-top: 1%;
+}
+
+.CoverExper ul li::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -25px;
+    width: 10px;
+    height: 10px;
+    background: rgb(165, 165, 165);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px white;
+    margin-top: 2%;
+}
+
+.CoverExper ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.CoverExper ul li p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.CoverExper ul li .WaktuExper {
+    position: absolute;
+    top: 5px;
+    right: -290px;
+    margin: 0;
+    padding: 8px 15px;
+    background-color: rgb(207, 206, 206, 0.5);
+    border-radius: 15px;
+    margin-top: 2%;
+    font-size: var(--Ukuran2-size);
+}
 
 
+
+/********** Bagian ABOUT  **********/
+.About {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 4%;
+    background: rgb(12, 44, 69);
+    color: white;
+}
+
+
+
+.Abt-Icon {
+    float: left;
+    width: 6%;
+    padding-top: 18%;
+}
+
+.Abt-CovIcon {
+    position: absolute;
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    z-index: 2;
+    overflow: hidden;
+    width: 79px;
+}
+
+.Abt-CovIcon a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin: 10%;
+    color: white;
+    font-size: 30px;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+.Abt-CovIcon a:hover {
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.Abt-CovIcon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+
+.Abt-CovIcon a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
+.facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+/*--- Kolom AbtTentang **********/
+.AbtTentang {
+    float: left;
+    width: 38%;
+    height: 300px;
+    padding-top: 8%;
+    transition: all 0.3s ease-out;
+}
+
+.AbtTentang-Cover {
+    width: 215px;
+    height: 213px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.AbtTentang-Cover:hover {
+    width: 370px;
+    height: 490px;
+    border-radius: 5px;
+    /* background-color: rgba(255, 255, 255, 0.658); */
+    background-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    margin-top: calc(-15% + 10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.AbtTentang-Konteks img {
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    height: 190px;
+    width: 190px;
+    border: 1px solid #fff;
+    object-fit: cover;
+    margin: 12px auto;
+    transition: all 0.3s ease;
+}
+
+.AbtTentang-Konteks .AbtTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.AbtTentang-Konteks .Abtplace {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.AbtTentang-Cover:hover .AbtTentang-Konteks img.active {
+    width: 370px;
+    height: 490px;
+    margin: 0px auto;
+    border-radius: 0px;
+}
+
+.AbtContent p {
+    font-weight: bold;
+    font-size: var(--Ukuran3-size);
+}
+
+.AbtContent span {
+    font-size: 15px;
+}
+
+.panduan {
+    font-weight: bold;
+    padding-left: 38%;
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.panduan p {
+    padding-top: 1.5%;
+    font-size: 54%;
+    padding-left: 21%;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.AbtTentang-Cover:hover+.panduan {
+    display: none;
+}
+
+.AbtTentang-Konteks img.active+.panduan {
+    display: none;
+}
+
+/*--- Kolom AbtProfl **********/
+.AbtProfilBody {
+    float: left;
+    width: 55.99%;
+    height: 300px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3%;
+}
+
+.AbtContainer {
+    position: relative;
+    width: 440px;
+    height: 400px;
+}
+
+.AbtContainer .thumb {
+    position: absolute;
+    top: 57%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+/* COVER MENU */
+.AbtContainer .thumb li {
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    padding: var(--Ukuran2-size);
+    width: 100px;
+    height: 70px;
+    margin: 25px -30px;
+    border-radius: 15%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+/* ICON nya */
+.thumb .iconify {
+    font-size: 30px;
+}
+
+.thumb li::after {
+    filter: blur(5px);
+}
+
+.thumb li:hover::before,
+.thumb li:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    transform: scale(1.02);
+    background: linear-gradient(45deg, #0f43f09d, #00f0f0, #0f43f09d,
+            #00f0f0, #0f43f09d);
+    border-radius: 15%;
+    background-size: 400%;
+    transition: 1s;
+    z-index: -1;
+    animation: animasiAbout 20s linear infinite;
+    color: blue;
+}
+
+.thumb li:hover {
+    color: #00f0f0;
+}
+
+.terpilih {
+    color: #00f0f0;
+}
+
+
+@keyframes animasiAbout {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* TEKS MENU */
+.thumb p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* COVER PARAGRAF*/
+.AbtContainer .target_box {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 0;
+    width: 600px;
+    height: 113%;
+    /* background-color: rgba(255, 255, 255, 0.09); */
+    font-size: 16px;
+    border: 1px solid rgba(230, 230, 230, 0.25);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 130px;
+    line-height: 1.5em;
+}
+
+/** div1 **/
+#div1 {
+    word-spacing: 3px;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+/** div2  **/
+#div2 {
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#div2 .columndiv2 .iconify {
+    font-size: 50px;
+}
+
+.columndiv2 {
+    float: left;
+    width: 33%;
+}
+
+#div2:after,
+#div3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/** div3  **/
+#div3 {
+    margin-top: -25%;
+}
+
+.columndiv3 {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.columndiv3 h2 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.CoverListSkill {
+    margin: 0;
+    padding: 0;
+}
+
+.CoverListSkill li {
+    padding: 2px 0;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.9);
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 4%;
+}
+
+/** div4  **/
+#div4 {
+    line-height: 1.5em;
+    margin-top: -50px;
+}
+
+#div4 ul {
+    padding-left: 1%;
+    list-style: none;
+}
+
+#div4 .c {
+    margin-top: 1px;
+    list-style-type: square;
+}
+
+#div4 .formal p,
+#div4 .non-formal p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#div4 .non-formal {
+    margin-top: 50px;
+}
+
+/*  Dll About    */
+.target_box .targetDiv {
+    display: none;
+}
+
+.thumb li.active {
+    background: rgb(0, 0, 0);
+    color: yellow;
+}
+
+
+.targetss {
+    position: absolute;
+    margin: 66% 4%;
+    font-size: 15px;
+    width: 80%;
+    display: none;
+    font-weight: bold;
+}
+
+.targetss p:nth-last-child(2) {
+    float: right;
+    margin-top: -25px;
+}
+
+.skill_levelss {
+    margin-top: 1%;
+    background: #BFDFF8;
+    width: 100%;
+    height: 5px;
+}
+
+.sidebarIconToggle {
+    display: none;
+}
+
+.openSidebarMenu {
+    display: none;
+}
+
+/* AKHIRAN EXPERIENCE */
+
+/* DLL CSS */
+/* .Experiencedua {
+    margin: 0;
+    padding: 0;
+    height: 580px;
+    background-color: red;
+}
+
+.Experience .visitor {
+    position: fixed;
+    display: block;
+    -webkit-transform: translateY(-170%);
+    -ms-transform: translateY(-170%);
+    transform: translateY(-170%);
+
+    z-index: 1;
+    padding: 10px;
+    transition: all 0.3s ease;
+    background: #ff0000;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+} */
+
+
+
+
+
+/* different CSS */
+
+
+
+@media screen and (max-width : 420px) {
+    header.sticky {
+        background: transparent;
+        transition: 0.6s;
+    }
 
     header {
         padding: 10px 15px;
@@ -232,45 +784,45 @@ header ul li:hover a::before {
         margin-bottom: 10px;
     }
 
-
     .sidebar {
         width: 100%;
         height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 185px;
-        transition: .3s;
 
+        top: 0;
+        /*  POSISI COVER SIDEBAR MENU nya */
+        right: -180;
+        transition: .3s;
     }
 
     .sidebar ul {
         float: right;
-
         padding: 30px 24px;
         height: 100%;
         display: block;
+
         text-decoration: none;
         background-color: rgba(19, 51, 76, 0.5);
     }
 
     .sidebar ul li {
         margin-bottom: 30px;
-
+        margin-left: -20%;
     }
 
     .sidebar ul li a {
         margin-bottom: 333px;
         color: white;
         font-size: 18px;
+
     }
 
     /* side tombol */
     .sidbtn {
         position: absolute;
-        right: 190px;
-        top: 20px;
-        width: 35px;
-        height: 35px;
+        right: 185px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
         box-sizing: border-box;
         background: rgb(0, 255, 8);
         cursor: pointer;
@@ -281,11 +833,11 @@ header ul li:hover a::before {
 
     .sidbtn span {
         display: block;
-        width: 28px;
+        width: 25px;
         height: 3px;
         background: black;
         position: absolute;
-        top: 6px;
+        top: 4px;
         left: 3px;
         transition: 0.3s;
 
@@ -295,7 +847,7 @@ header ul li:hover a::before {
         content: '';
         position: absolute;
         background: black;
-        width: 28px;
+        width: 25px;
         height: 3px;
         top: 10px;
         left: 0;
@@ -306,37 +858,24 @@ header ul li:hover a::before {
         content: '';
         position: absolute;
         background: black;
-        width: 28px;
+        width: 25px;
         height: 3px;
         top: 20px;
         left: 0;
         transition: 0.3s;
     }
 
+    #mo {
+        height: 10%;
+    }
+
 }
 
 
-/* MIN 1081 */
-@media screen and (min-width: 1081px) {
-
-    /* side tombol */
-    .sidbtn {
-        position: absolute;
-        right: 190px;
-        top: 20px;
-        width: 35px;
-        height: 35px;
-        box-sizing: border-box;
-        background: black;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        display: block;
-    }
-
+@media screen and (min-width: 421px) and (max-width: 1200px) {
 
     header {
-        padding: 10px 35px;
+        padding: 10px 25px;
     }
 
     body {
@@ -360,16 +899,17 @@ header ul li:hover a::before {
         overflow: hidden;
     }
 
-    #paper {
+    .sidebar {
         width: 100%;
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 185px;
         transition: .3s;
+        display: block;
+
     }
 
-    #paper ul {
+    .sidebar ul {
         float: right;
         padding: 30px 24px;
         height: 100%;
@@ -378,26 +918,26 @@ header ul li:hover a::before {
         background-color: rgba(19, 51, 76, 0.5);
     }
 
-    #paper ul li {
+    .sidebar ul li {
         margin-bottom: 30px;
-
     }
 
-    #paper ul li a {
+    .sidebar ul li a {
         margin-bottom: 333px;
         color: white;
         font-size: 18px;
+        margin-left: -12%;
     }
 
     /* side tombol */
     .sidbtn {
         position: absolute;
-        right: 190px;
+        right: 170px;
         top: 20px;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         box-sizing: border-box;
-        background: black;
+        background: yellow;
         cursor: pointer;
         border: none;
         outline: none;
@@ -406,11 +946,11 @@ header ul li:hover a::before {
 
     .sidbtn span {
         display: block;
-        width: 28px;
+        width: 25px;
         height: 3px;
         background: black;
         position: absolute;
-        top: 6px;
+        top: 3.5px;
         left: 3px;
         transition: 0.3s;
     }
@@ -418,7 +958,7 @@ header ul li:hover a::before {
     .sidbtn span:before {
         content: '';
         position: absolute;
-        width: 28px;
+        width: 25px;
         height: 3px;
         background: black;
         top: 10px;
@@ -429,7 +969,7 @@ header ul li:hover a::before {
     .sidbtn span:after {
         content: '';
         position: absolute;
-        width: 28px;
+        width: 25px;
         height: 3px;
         background: black;
         top: 20px;
